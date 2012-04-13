@@ -1,7 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Site under construction</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
@@ -39,8 +38,18 @@
 		</script>
 		<![endif]-->
 	</head>
-	<body>
+	<body data-responsejs='{ 
+        "create": [
+            { "prop": "width"
+            , "prefix": "min-width- r src"
+            , "lazy": true
+            , "breakpoints": [1281,1025,961,641,481,320,0] }
+        ]}'
+    >
 		<div class="container">
+			<div data-min-width-481="markup @ 481px+" data-min-width-961="markup @ 961px+">
+       			default markup for 480px- or no-js
+   			</div>
 			<div id="header">
 				<div id="logo">
 					<a href="index.html"><img src="images/logo.png" alt="logo"/></a>
